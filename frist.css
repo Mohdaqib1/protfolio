@@ -1,5 +1,32 @@
 body {margin: 0;}
 
+.hide{
+  display:none;
+}
+.protfolio
+{
+    text-align: center;
+    opacity: 0.5;
+}
+.imgg{
+  text-align: center;
+}
+.myimage{
+    border-radius: 45%;
+    text-align: center;
+   width:40%;
+   height:30%;
+   opacity: 0.5;
+}
+.myimage:hover , .protfolio:hover {
+    opacity: 1.0;
+  }
+
+  .resume{
+    text-align: center;
+    color: black;
+    text-emphasis-color: black;
+}
 ul.sidenav {
   list-style-type: none;
   margin: 0;
@@ -17,27 +44,12 @@ ul.sidenav li a {
   padding: 8px 16px;
   text-decoration: none;
 }
-.protfolio
-{
-    text-align: center;
-    opacity: 0.5;
-}
-.myimage{
-    border-radius: 50%;
-   margin-top: 15%;
-   margin-left: 29%;
-   width:40%;
-   height:5%;
-   opacity: 0.5;
-}
-.myimage:hover , .protfolio:hover {
-    opacity: 1.0;
-  }
+
  
 .iconimage{
     width:3%;
     height:3%;
-    
+    float: right;
 }
 
 ul.sidenav li a.active {
@@ -49,60 +61,71 @@ ul.sidenav li a:hover:not(.active) {
   background-color: rgb(156, 154, 154);
   color: white;
 }
-.resume{
-    text-align: center;
-}
+
 div.content {
   margin-left: 25%;
   padding: 1px 16px;
   height: 1000px;
 }
+.dropdown{
+  display:none;
+}
 
 @media screen and (max-width: 900px) {
+  .hide{
+    display:block;
+  }
   ul.sidenav {
     width: 100%;
     height: auto;
     position: relative;
   }
-  
-  ul.sidenav li a {
-    float: left;
-    padding: 15px;
+  .dropdown{
+    display: block;
+    float:left;
   }
+  .mobile{
+    display: none;
+  }
+
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(156, 154, 154);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+   
+  }
+  .btnmenu{
+    width: 20px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    border-radius: 10%;
+    background-color: rgb(156, 154, 154);
+    text-decoration: none;
+    display: block;
+    text-align: right;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .menuimage{
+    width: 20px;
+    height: 20px;
+    
+  }
+ 
+
   
   div.content {margin-left: 0;}
 }
 
-@media screen and (max-width: 900px) {
-  ul.sidenav li a {
-    text-align: center;
-    float: none;
-  }
-  .myimage{
-    border-radius: 50%;
-   margin-top: 15%;
-   margin-left: 3%;
-   width:40%;
-   height:5%;
-   opacity: 0.5;
-}
-.myimage:hover {
-    opacity: 1.0;
-  }
-}
 
-@media screen and (max-width: 300px) {
-    ul.sidenav li a {
-      text-align: center;
-      float: none;
-    }
-  }
-  .personal {
-    display: none;
-    background-color: #f1f1f1;
-    padding: 10px;
-  }
-  
-  div:hover .personal {
-    display: block;
-  }
