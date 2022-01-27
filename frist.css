@@ -87,17 +87,28 @@ div.content {
   .mobile{
     display: none;
   }
-
+  li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
   
   li a:hover, .dropdown:hover .dropbtn {
     background-color: rgb(156, 154, 154);
+  }
+  li.dropdown {
+    display: inline-block;
   }
   
   .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-   
+    min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
   }
   .btnmenu{
     width: 20px;
@@ -117,15 +128,54 @@ div.content {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  
   .menuimage{
     width: 20px;
     height: 20px;
     
   }
- 
-
-  
   div.content {margin-left: 0;}
 }
 
 
+.personal {
+  display: none;
+  background-color: rgb(156, 154, 154);
+  padding: 2px;
+  border-radius: 10%;
+}
+
+div:hover .personal {
+  display: block;
+}
+.tec {
+  display: none;
+}
+
+div:hover .tec {
+  display: block;
+}
+
+
+.pages {
+  display: inline-block;
+  
+}
+
+.pages a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.footer{
+  background-color: rgb(156, 154, 154);
+  width: 100%;
+}
+
+.footerimg{
+  height: 15px;
+  width: 15px;
+
+}
